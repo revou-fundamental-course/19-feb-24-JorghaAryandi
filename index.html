@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#messageus">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <div class="container-welcome">
+            <img src="assets/img/background.png" alt="">
+            <div class="text-overlay">
+                <h1>Welcome to our Company</h1>
+                <p id="welcome-msg"></p>
+            </div>
+        </div>
+
+        <section class="about-section" id="about">
+            <div class="about-company">
+                <h1>About the Company</h1>
+                <p>
+                    CodeMasterHub is a leading provider of IT services, specializing in Cloud Computing and Cyber Security solutions.
+                    We are dedicated to delivering cutting-edge technology solutions to our clients, helping them achieve their digital transformation goals.
+                </p>
+                <ul class="services-list">
+                    <li>
+                        <div>
+                            <i class="fas fa-laptop fa-3x"></i>
+                            <h3>IT Services</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="fas fa-cloud fa-3x"></i>
+                            <h3>Cloud Computing</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="fas fa-shield-alt fa-3x"></i>
+                            <h3>Cyber Security</h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="vision-mission">
+                <h2>Vision</h2>
+                <p>To become a global leader in providing innovative IT solutions that empower businesses.</p>
+                <h2>Mission</h2>
+                <h3>Customer Satisfaction</h3>
+                <p>We strive to exceed customer expectations by delivering high-quality services and solutions tailored to their specific needs.</p>
+                <h3>Innovation</h3>
+                <p>We are committed to innovation and continuous improvement, constantly exploring new technologies and methodologies to stay ahead in the industry.</p>
+            </div>
+        </section>
+
+        <section class="our-profile" id="profile">
+            <h1>Our Profile</h1>
+            <div class="profile-info">
+                <div class="profile-picture">
+                    <img src="assets/img/profile.jpg" alt="Profile Picture">
+                </div>
+                <div class="profile-details">
+                    <h3>Jorgha Akram Aryandi</h3>
+                    <p>Position: CEO</p>
+                    <p>Jorgha Akram Aryandi adalah seorang CEO yang bergerak di bidang IT Services, Cloud, dan Cyber Security di perusahaan ini.</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <div class="container" id="messageus">
+            <div class="column">
+                <div id="contact-form-container">
+                    <h2>Message Us</h2>
+                    <form id="contact-form" onsubmit="return validateForm(event)">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br>
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="tel" id="phone" name="phone" required><br>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" required></textarea><br>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="column" id="output-container">
+                <h2>Output:</h2>
+                <p><strong>Name:</strong> <span id="output-name"></span></p>
+                <p><strong>Email:</strong> <span id="output-email"></span></p>
+                <p><strong>Phone Number:</strong> <span id="output-phone"></span></p>
+                <p><strong>Message:</strong> <span id="output-message"></span></p>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 CodeMasterHub. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
